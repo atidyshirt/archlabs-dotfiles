@@ -1,0 +1,2 @@
+#!/bin/sh
+man -k . | awk '{print $1}' | rofi -dmenu -theme rosebox -i -p "Search Manuals: " | xargs -r kitty -e man

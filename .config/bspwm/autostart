@@ -1,0 +1,13 @@
+#!/bin/sh
+# Applications
+~/.config/polybar/launch.sh &
+
+# pidof clight || clight --lat=26.83 --lon=80.92 &
+xrdb ~/.Xresources
+
+# Normal cursor
+xsetroot -cursor_name left_ptr &
+
+# Capslock mapped to escape
+xmodmap -e 'clear Lock' #ensures you're not stuck in CAPS on mode
+xmodmap -e 'keycode 0x42=Escape' #remaps the keyboard so CAPS LOCK=ESC

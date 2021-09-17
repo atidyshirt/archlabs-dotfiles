@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+selected=`cat ~/.config/cfg/cht-languages ~/.config/cfg/cht-command | rofi -dmenu -theme rosebox -i -p "Cheatsheet: "`
+query=`echo -e "" | rofi -dmenu -theme rosebox -i -p "Enter Query: "`
+
+echo "$selected, $query"
+
+if grep -qs "$selected" ~/.config/cfg/cht-languages; then
+    query=`echo $query | tr ' ' '+'`
+    kitty zsh -c "curl cht.sh/$selected/$query | bat --paging=always"
+else
+    kitty zsh -c "curl -s cht.sh/$selected~$query | bat --paging=always"
+fi

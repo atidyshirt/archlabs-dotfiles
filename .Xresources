@@ -1,0 +1,35 @@
+! Base colors
+*.foreground:  #bab5b7
+*.background:  #262626
+*.cursorColor: #a89984
+
+*.color0: #32302f
+*.color1: #62554A
+*.color2: #A3BE8C
+*.color3: #bebebe
+*.color4: #637a8a
+*.color5: #78758A
+*.color6: #877979
+*.color7: #bab5b7
+*.color8: #323e48
+*.color9: #D08770
+*.color10: #A3BE8C
+*.color11: #8b8f7e
+*.color12: #637a8a
+*.color13: #78758A
+*.color14: #877979
+*.color15: #bab5b7
+
+
+! Rofi
+rofi.font: monospace 12
+rofi.padding: 20
+rofi.line-padding: 2
+rofi.color-enabled: true
+rofi.hide-scrollbar: true
+rofi.separator-style: solid
+rofi.color-window: #262626, #62554A #3a3a3a
+rofi.color-normal: #262626, #62554A #3a3a3a #bab5b7 #62554A
+rofi.color-urgent: argb:00000000, #877979, argb:00000000, argb:00000000, #a89984
+rofi.color-active: argb:00000000, #637a8a, argb:00000000, argb:00000000, #a89984
+rofi.kb-cancel: Escape,Alt+F1

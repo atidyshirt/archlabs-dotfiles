@@ -26,16 +26,13 @@ bspc config pointer_action2 resize_corner
 #### BSPWM configuration ####
 _bc window_gap 			  						0
 _bc top_padding 									25
-_bc top_monocle_padding 					0
 _bc border_width 								  12
-_bc bottom_padding                0
-_bc left_padding                  0
-_bc right_padding 								0
+_bc right_padding                 0
 _bc single_monocle                false
 _bc click_to_focus                false
-_bc split_ratio                   0.50
-_bc borderless_monocle            false
-_bc gapless_monocle               false
+_bc split_ratio                   0.49
+_bc borderless_monocle            true
+_bc gapless_monocle               true
 _bc paddingless_monocle  	  			false
 _bc focus_follows_pointer         true
 _bc remove_disabled_monitors      true
@@ -48,23 +45,20 @@ _bc pointer_action3 resize_corner
 
 # Rules
 bspc rule -a feh state='floating'
-bspc rule -a mpv state='floating'
+bspc rule -a tint2 state='floating' follow=on
+bspc rule -a mpv sticky=on state='floating'
+bspc rule -a firefox:Toolkit sticky=on state=floating
 bspc rule -a Zathura state='tiled'
 bspc rule -a *:SPLASH state=floating
+bspc desktop 5 -l monocle # desktop five starts in molocule
 bspc desktop -f 1
-
 # INIT-DAEMONS
 sxhkd &
 picom --experimental-backends &
 dunst &
+tint2 &
 setxkbmap -option caps:esc
 ~/.config/bspwm/autostart &
-
-# double boarders
-#!/bin/sh
-#
-#   double borders
-#
 
 # Colors
 bspc config active_border_color "#262626"

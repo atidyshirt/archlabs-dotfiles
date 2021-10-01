@@ -1,6 +1,7 @@
 #!/bin/sh
-# Applications
+# Bars and scripts
 ~/.config/polybar/launch.sh &
+~/.config/bspwm/floating-desktop &
 
 # pidof clight || clight --lat=26.83 --lon=80.92 &
 xrdb ~/.Xresources

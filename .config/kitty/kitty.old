@@ -1,6 +1,6 @@
 # SETTINGS
-term xterm-kitty
 enable_audio_bell no
+term xterm-kitty
 scrollback_lines 2000
 click_interval 0.5
 select_by_word_characters :@-./_~?&=%+#
@@ -32,4 +32,26 @@ live_config_reload: true
 window_border_width 1pt
 draw_minimal_borders yes
 
-include gruvbox.conf
+# # Gruvbox
+background #282828
+foreground #d4be98
+selection_background #d4be98
+selection_foreground #1d2021
+cursor #a89984
+cursor_text_color background
+color0 #282828
+color8 #928374
+color1 #ea6962
+color9 #ea6962
+color2 #a9b665
+color10 #a9b665
+color3 #e78a4e
+color11 #d8a657
+color4 #7daea3
+color12 #7daea3
+color5 #d3869b
+color13 #d3869b
+color6 #89b482
+color14 #89b482
+color7 #d4be98
+color15 #d4be98

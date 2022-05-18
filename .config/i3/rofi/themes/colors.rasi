@@ -3,6 +3,7 @@
 
 * {
 background:			#262626;
+background-alt:	    #32302f;
 foreground:			#bab5b7;
 selected:			#637a8a;
 highlight:			#637a8a;
